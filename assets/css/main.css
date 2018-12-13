@@ -51,6 +51,12 @@ header {
     font-weight: 300;
   }
 
+  #right_arrow{
+    margin-left: 10px;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
   .sim-button{
     text-align: center;
     margin-right: auto;
@@ -66,6 +72,7 @@ header {
     color: white;
     background-color: transparent;
     border: 1px solid #0094ff;
+    border-radius: 20px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -108,7 +115,9 @@ header {
 
 
 
-  @media (pointer: coarse) and (hover: none) {
+  /* @media (pointer: coarse) and (hover: none) { */
+    @media (max-width: 768px) {
+
     header {
       /* background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll; */
     }
@@ -117,5 +126,8 @@ header {
     }
     header #logo{
       width: 80vw !important;
+    }
+    header .overlay {
+      opacity: 0.55;
     }
   }

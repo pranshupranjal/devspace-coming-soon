@@ -9,6 +9,7 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
   
   header video {
@@ -64,11 +65,24 @@ header {
     margin-top: 10vh;
     padding: 10px 20px 10px 20px;
     display: inline-block;
+    width: 22%;
     cursor: pointer;
     font-weight: 300;
   }
 
-  .button16 {
+  .sim-button1{
+    width: 22%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300;
+  }
+
+  .button1 {
     color: white;
     background-color: transparent;
     border: 1px solid #0094ff;
@@ -80,12 +94,12 @@ header {
     position: relative;
     overflow: hidden;
   }
-  .button16 a{
+  .button1 a{
     color: rgba(51,51,51,1);
     text-decoration: none;
     display: block;
   }
-  .button16::before, .button16::after{
+  .button1::before, .button1::after{
     content: '';
     position: absolute;
     top: 0;
@@ -104,11 +118,11 @@ header {
     -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   }
-  .button16::after{
+  .button1::after{
     -webkit-transition-delay: 0.2s; /* Safari */
       transition-delay: 0.2s;
   }
-  .button16:hover::before, .button16:hover::after{
+  .button1:hover::before, .button1:hover::after{
     -webkit-transform: translate(0,0);
     transform: translate(0,0);	
   }
@@ -119,7 +133,7 @@ header {
     @media (max-width: 768px) {
 
     header {
-      /* background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll; */
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
     header video {
       /* display: none; */
@@ -128,6 +142,13 @@ header {
       width: 80vw !important;
     }
     header .overlay {
-      opacity: 0.55;
+      opacity: 0.75;
+    }
+    .sim-button{
+      width: 80%;
+    }
+    .sim-button1{
+      width: 80%;
+      margin-left: auto;
     }
   }

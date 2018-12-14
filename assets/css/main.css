@@ -9,7 +9,8 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url(/assets/img/backup_bg.png) black no-repeat center center scroll;
+    background-size: cover;
   }
   
   header video {
@@ -128,15 +129,11 @@ header {
   }
 
 
-
-  /* @media (pointer: coarse) and (hover: none) { */
     @media (max-width: 768px) {
 
     header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    header video {
-      /* display: none; */
+      background: url(/assets/img/backup_bg.png) black no-repeat center center scroll;
+      background-size: cover;
     }
     header #logo{
       width: 80vw !important;

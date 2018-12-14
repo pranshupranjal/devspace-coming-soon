@@ -9,7 +9,7 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-    background: url(/assets/img/backup_bg.png) black no-repeat center center scroll;
+    background: url(../img/backup_bg.jpg) black no-repeat center center scroll;
     background-size: cover;
   }
   
@@ -132,7 +132,7 @@ header {
     @media (max-width: 768px) {
 
     header {
-      background: url(/assets/img/backup_bg.png) black no-repeat center center scroll;
+      background: url(../img/backup_bg.jpg) black no-repeat center center scroll;
       background-size: cover;
     }
     header #logo{
